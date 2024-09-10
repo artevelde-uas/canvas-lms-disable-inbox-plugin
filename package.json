@@ -1,0 +1,37 @@
+{
+  "name": "@artevelde-uas/canvas-lms-disable-inbox-plugin",
+  "version": "0.1.0",
+  "description": "Removes the 'Inbox' funtionality",
+  "keywords": [
+    "Canvas LMS",
+    "inbox"
+  ],
+  "license": "ISC",
+  "author": "Renaat De Muynck <renaat.demuynck@arteveldehs.be>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artevelde-uas/canvas-lms-disable-inbox-plugin.git"
+  },
+  "packageManager": "yarn@3.5.0",
+  "module": "src/index.js",
+  "files": [
+    "src/"
+  ],
+  "config": {
+    "server": {
+      "file": "main.js"
+    }
+  },
+  "scripts": {
+    "dev": "run-p serve watch",
+    "watch": "webpack ./index.js --watch --progress --stats minimal --config webpack.config.js",
+    "serve": "canvas-server-start"
+  },
+  "dependencies": {
+    "@artevelde-uas/canvas-lms-app": "1.0.0"
+  },
+  "devDependencies": {
+    "@artevelde-uas/canvas-lms-theme-dev": "^0.4.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
