@@ -1,0 +1,10 @@
+{
+    "en": {
+        "title": "Removes the 'Inbox' funtionality",
+        "description": "Removes the 'Inbox' menu item and redirects all calls to the Inbox back to the Dashboard"
+    },
+    "nl": {
+        "title": "Verwijdert de 'Inbox'-functionaliteit",
+        "description": "Verwijdert het menu-item 'Inbox' en leidt alle verzoeken van de Inbox terug naar het Dashboard"
+    }
+}
