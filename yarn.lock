@@ -15,32 +15,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@artevelde-uas/canvas-lms-api@npm:^0.2.0":
-  version: 0.2.1
-  resolution: "@artevelde-uas/canvas-lms-api@npm:0.2.1"
+"@artevelde-uas/canvas-lms-api@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@artevelde-uas/canvas-lms-api@npm:0.3.0"
   dependencies:
     js-cookie: ^2.2.1
-  checksum: 2f555cb79646d010e37fa0edb1895677ea75bb288b307912182efde03cfea45cf3477e6c37f77b744586b9c1a71e940a46438c6557dff6fe6ee0491538907b3a
+  checksum: ab87e01a0ca7660b7c4908991016d6c346c12f184926dc6c4b4b3f928cca4efbcf8019fba9e58293ed1c5313487f2177012d5744a16e4c677e35f5637a3d5073
   languageName: node
   linkType: hard
 
-"@artevelde-uas/canvas-lms-app@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@artevelde-uas/canvas-lms-app@npm:1.0.0"
+"@artevelde-uas/canvas-lms-app@npm:^1.15.2":
+  version: 1.15.2
+  resolution: "@artevelde-uas/canvas-lms-app@npm:1.15.2"
   dependencies:
-    "@artevelde-uas/canvas-lms-api": ^0.2.0
+    "@artevelde-uas/canvas-lms-api": ^0.3.0
     "@instructure/canvas-theme": ^8.11.1
-    events: ^2.0.0
-    i18next: ^21.3.1
-    js-cookie: ^2.2.0
-    react-i18next: ^11.12.0
+    events: ^3.3.0
+    i18next: ^22.4.14
+    js-cookie: ^3.0.1
+    react-i18next: ^12.2.0
     route-parser: ^0.0.5
   peerDependencies:
     "@instructure/emotion": ^8.11.1
     "@instructure/ui": ^8.11.1
     react: ^17.0.2
     react-dom: ^17.0.2
-  checksum: ab73c0a1d6bf3c9459502b72e1137be7518bd6e86b6d1cc33eb87d41aab4616877772077235fa12aa0f340af989de313e07be5606495f0c1622b78b9a0c86e87
+  peerDependenciesMeta:
+    "@instructure/emotion":
+      optional: true
+    "@instructure/ui":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 7b13b0b3a25dd0486cc8a03d264822a39bbc2ca50ccf0c277685046a13569ba0d3559ebb0e82f1494fe02a758e4e2b08dd25f71d38bc173c3f47dc2ba6f5c725
   languageName: node
   linkType: hard
 
@@ -48,7 +57,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@artevelde-uas/canvas-lms-disable-inbox-plugin@workspace:."
   dependencies:
-    "@artevelde-uas/canvas-lms-app": 1.0.0
+    "@artevelde-uas/canvas-lms-app": ^1.15.2
     "@artevelde-uas/canvas-lms-theme-dev": ^0.4.0
     npm-run-all: ^4.1.5
   languageName: unknown
@@ -1452,7 +1461,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.14.5, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.20.6, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.8.4":
   version: 7.25.6
   resolution: "@babel/runtime@npm:7.25.6"
   dependencies:
@@ -4618,14 +4627,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"events@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "events@npm:2.1.0"
-  checksum: 8756c4f40a57ffdaa60f1e285beb1fcf2873a26ef713879b927ed648b2833cbbbcdbf93460a3af407af55677e89c044ac9c3c5639a7b3ce38f4dfec2fa4d039e
-  languageName: node
-  linkType: hard
-
-"events@npm:^3.0.0":
+"events@npm:^3.0.0, events@npm:^3.3.0":
   version: 3.3.0
   resolution: "events@npm:3.3.0"
   checksum: f6f487ad2198aa41d878fa31452f1a3c00958f46e9019286ff4787c84aac329332ab45c9cdc8c445928fc6d7ded294b9e005a7fce9426488518017831b272780
@@ -5706,12 +5708,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^21.3.1":
-  version: 21.10.0
-  resolution: "i18next@npm:21.10.0"
+"i18next@npm:^22.4.14":
+  version: 22.5.1
+  resolution: "i18next@npm:22.5.1"
   dependencies:
-    "@babel/runtime": ^7.17.2
-  checksum: f997985e2d4d15a62a0936a82ff6420b97f3f971e776fe685bdd50b4de0cb4dc2198bc75efe6b152844794ebd5040d8060d6d152506a687affad534834836d81
+    "@babel/runtime": ^7.20.6
+  checksum: 175f8ab7fac2abcee147b00cc2d8e7d4fa9b05cdc227f02cac841fc2fd9545ed4a6d88774f594f8ad12dc944e4d34cc8e88aa00c8b9947baef9e859d93abd305
   languageName: node
   linkType: hard
 
@@ -6511,10 +6513,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-cookie@npm:^2.2.0, js-cookie@npm:^2.2.1":
+"js-cookie@npm:^2.2.1":
   version: 2.2.1
   resolution: "js-cookie@npm:2.2.1"
   checksum: 9b1fb980a1c5e624fd4b28ea4867bb30c71e04c4484bb3a42766344c533faa684de9498e443425479ec68609e96e27b60614bfe354877c449c631529b6d932f2
+  languageName: node
+  linkType: hard
+
+"js-cookie@npm:^3.0.1":
+  version: 3.0.5
+  resolution: "js-cookie@npm:3.0.5"
+  checksum: 2dbd2809c6180fbcf060c6957cb82dbb47edae0ead6bd71cbeedf448aa6b6923115003b995f7d3e3077bfe2cb76295ea6b584eb7196cca8ba0a09f389f64967a
   languageName: node
   linkType: hard
 
@@ -6772,7 +6781,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -9132,23 +9141,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:>= 16.8 <= 18":
-  version: 18.3.1
-  resolution: "react-dom@npm:18.3.1"
+"react-i18next@npm:^12.2.0":
+  version: 12.3.1
+  resolution: "react-i18next@npm:12.3.1"
   dependencies:
-    loose-envify: ^1.1.0
-    scheduler: ^0.23.2
-  peerDependencies:
-    react: ^18.3.1
-  checksum: 298954ecd8f78288dcaece05e88b570014d8f6dce5db6f66e6ee91448debeb59dcd31561dddb354eee47e6c1bb234669459060deb238ed0213497146e555a0b9
-  languageName: node
-  linkType: hard
-
-"react-i18next@npm:^11.12.0":
-  version: 11.18.6
-  resolution: "react-i18next@npm:11.18.6"
-  dependencies:
-    "@babel/runtime": ^7.14.5
+    "@babel/runtime": ^7.20.6
     html-parse-stringify: ^3.0.1
   peerDependencies:
     i18next: ">= 19.0.0"
@@ -9158,7 +9155,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 624c0a0313fac4e0d18560b83c99a8bd0a83abc02e5db8d01984e0643ac409d178668aa3a4720d01f7a0d9520d38598dcbff801d6f69a970bae67461de6cd852
+  checksum: fe3f360e5184bc63861734e94bf625a09b9ec0d28fab41779a68758af258fd1737dde25ff7a88ddb66c1571a3e3de5b3403825a91b4949bf9832a00615acb87a
   languageName: node
   linkType: hard
 
@@ -9166,15 +9163,6 @@ __metadata:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
-  languageName: node
-  linkType: hard
-
-"react@npm:>= 16.8 <= 18":
-  version: 18.3.1
-  resolution: "react@npm:18.3.1"
-  dependencies:
-    loose-envify: ^1.1.0
-  checksum: a27bcfa8ff7c15a1e50244ad0d0c1cb2ad4375eeffefd266a64889beea6f6b64c4966c9b37d14ee32d6c9fcd5aa6ba183b6988167ab4d127d13e7cb5b386a376
   languageName: node
   linkType: hard
 
@@ -9581,15 +9569,6 @@ __metadata:
   version: 1.2.4
   resolution: "sax@npm:1.2.4"
   checksum: d3df7d32b897a2c2f28e941f732c71ba90e27c24f62ee918bd4d9a8cfb3553f2f81e5493c7f0be94a11c1911b643a9108f231dd6f60df3fa9586b5d2e3e9e1fe
-  languageName: node
-  linkType: hard
-
-"scheduler@npm:^0.23.2":
-  version: 0.23.2
-  resolution: "scheduler@npm:0.23.2"
-  dependencies:
-    loose-envify: ^1.1.0
-  checksum: 3e82d1f419e240ef6219d794ff29c7ee415fbdc19e038f680a10c067108e06284f1847450a210b29bbaf97b9d8a97ced5f624c31c681248ac84c80d56ad5a2c4
   languageName: node
   linkType: hard
 
