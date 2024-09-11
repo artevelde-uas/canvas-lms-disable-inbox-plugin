@@ -28,7 +28,7 @@
     "serve": "canvas-server-start"
   },
   "dependencies": {
-    "@artevelde-uas/canvas-lms-app": "1.0.0"
+    "@artevelde-uas/canvas-lms-app": "^1.15.2"
   },
   "devDependencies": {
     "@artevelde-uas/canvas-lms-theme-dev": "^0.4.0",
