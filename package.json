@@ -13,6 +13,9 @@
     "url": "https://github.com/artevelde-uas/canvas-lms-disable-inbox-plugin.git"
   },
   "packageManager": "yarn@3.5.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "module": "src/index.js",
   "files": [
     "src/"
