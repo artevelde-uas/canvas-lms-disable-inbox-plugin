@@ -24,7 +24,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@artevelde-uas/canvas-lms-app@npm:^1.15.2":
+"@artevelde-uas/canvas-lms-app@npm:1":
+  version: 1.15.3
+  resolution: "@artevelde-uas/canvas-lms-app@npm:1.15.3"
+  dependencies:
+    "@artevelde-uas/canvas-lms-api": ^0.3.0
+    "@instructure/canvas-theme": ^8.11.1
+    events: ^3.3.0
+    i18next: ^22.4.14
+    js-cookie: ^3.0.1
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    react-i18next: ^12.2.0
+    route-parser: ^0.0.5
+  peerDependencies:
+    "@instructure/emotion": ^8.11.1
+    "@instructure/ui": ^8.11.1
+  peerDependenciesMeta:
+    "@instructure/emotion":
+      optional: true
+    "@instructure/shared-types":
+      optional: true
+    "@instructure/ui":
+      optional: true
+  checksum: 2af1233aaf5eadfc65d1543d10e8fef9ea40073868ada3cc31afcf4128a61d39b648f14d00dd267a026b8479f3364f61998527ad61fc537d98308acc80b60133
+  languageName: node
+  linkType: hard
+
+"@artevelde-uas/canvas-lms-app@npm:1.15.2":
   version: 1.15.2
   resolution: "@artevelde-uas/canvas-lms-app@npm:1.15.2"
   dependencies:
@@ -57,16 +84,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@artevelde-uas/canvas-lms-disable-inbox-plugin@workspace:."
   dependencies:
-    "@artevelde-uas/canvas-lms-app": ^1.15.2
-    "@artevelde-uas/canvas-lms-theme-dev": ^0.4.0
+    "@artevelde-uas/canvas-lms-app": 1.15.2
+    "@artevelde-uas/canvas-lms-theme-dev": ^0.4.2
     npm-run-all: ^4.1.5
+  peerDependencies:
+    "@artevelde-uas/canvas-lms-app": ^1.15
   languageName: unknown
   linkType: soft
 
-"@artevelde-uas/canvas-lms-theme-dev@npm:^0.4.0":
-  version: 0.4.1
-  resolution: "@artevelde-uas/canvas-lms-theme-dev@npm:0.4.1"
+"@artevelde-uas/canvas-lms-theme-dev@npm:^0.4.2":
+  version: 0.4.3
+  resolution: "@artevelde-uas/canvas-lms-theme-dev@npm:0.4.3"
   dependencies:
+    "@artevelde-uas/canvas-lms-app": 1
     "@babel/core": ^7.15.5
     "@babel/plugin-proposal-nullish-coalescing-operator": ^7.18.6
     "@babel/plugin-proposal-optional-chaining": ^7.21.0
@@ -97,7 +127,7 @@ __metadata:
     canvas-build: src/build.js
     canvas-server-start: src/server.js
     webpack: src/webpack.js
-  checksum: 69f48dd7028929f677f5ac890d50eedbe632340d07711fb1373612e8f008e79f73715b3b24aa86ac3620dcb162c876214838b3a5a724ba136a2992919deedff0
+  checksum: c85d32e260657ec6f41395dc6f055ceb3ababbe774b51e85212127344cbc34f4635274f43558e1432f53cf7426e156dfb11f5e52832cbc508e1fc389a2354dac
   languageName: node
   linkType: hard
 
@@ -1695,84 +1725,84 @@ __metadata:
   linkType: hard
 
 "@instructure/canvas-theme@npm:^8.11.1":
-  version: 8.56.2
-  resolution: "@instructure/canvas-theme@npm:8.56.2"
+  version: 8.56.3
+  resolution: "@instructure/canvas-theme@npm:8.56.3"
   dependencies:
     "@babel/runtime": ^7.23.2
-    "@instructure/shared-types": 8.56.2
-    "@instructure/theme-registry": 8.56.2
-    "@instructure/ui-theme-tokens": 8.56.2
-  checksum: 785540ada75befe319909e1b3ca1131edafc64267edf8b078fbfbd462e9be3d0ff2499f4c8686303dd2bd722b8a66f058b53dee79d219e4b83409927caa7e6ae
+    "@instructure/shared-types": 8.56.3
+    "@instructure/theme-registry": 8.56.3
+    "@instructure/ui-theme-tokens": 8.56.3
+  checksum: 85dd7a3df4539040f6a85fb1c72f6da7487dd660a8947fbf4d7f01ff612fdc6d0209bd1c2a38981f7d9d43d544cc5e553e26ea34104646b888de2f103527b3a5
   languageName: node
   linkType: hard
 
-"@instructure/console@npm:8.56.2":
-  version: 8.56.2
-  resolution: "@instructure/console@npm:8.56.2"
+"@instructure/console@npm:8.56.3":
+  version: 8.56.3
+  resolution: "@instructure/console@npm:8.56.3"
   dependencies:
     "@babel/helper-annotate-as-pure": ^7.22.5
     "@babel/helper-module-imports": ^7.22.15
     babel-plugin-macros: ^3.1.0
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: 191a1e254e09d3d99fd67ecc17b8236154386787eaf626e842951f90d30b7a71d7c0a1bd49fdd7b97b052de2a20d95479d6211aba277c15a562f1fd4ef9165e0
+  checksum: 01aa729d811f6656d9e1c7e2a7de156f5a9242cfaf310e1d26f3e252d2e8825a0afc145a90c34f693a71d14db35f806dd612aed9bdeb18ed5918f95f26b42cf9
   languageName: node
   linkType: hard
 
-"@instructure/shared-types@npm:8.56.2":
-  version: 8.56.2
-  resolution: "@instructure/shared-types@npm:8.56.2"
+"@instructure/shared-types@npm:8.56.3":
+  version: 8.56.3
+  resolution: "@instructure/shared-types@npm:8.56.3"
   dependencies:
     prop-types: ^15.8.1
   peerDependencies:
     react: ">=16.8 <=18"
-  checksum: b746a52918574e62108085f89012d34702dfc5450da8f9d5961bc14413ef9b1166b209dc008e9d4e9c490f39b792f94c45c6ad345039ac132f6964d43120afb8
+  checksum: 54b52024096250a00b497b49bda37cef1383d06b172ceb72929e3c56e341a23dd44a4ecb97fb63c5e08b6efa801f8c2a3990a5289523110079af7f75660e7a69
   languageName: node
   linkType: hard
 
-"@instructure/theme-registry@npm:8.56.2":
-  version: 8.56.2
-  resolution: "@instructure/theme-registry@npm:8.56.2"
+"@instructure/theme-registry@npm:8.56.3":
+  version: 8.56.3
+  resolution: "@instructure/theme-registry@npm:8.56.3"
   dependencies:
     "@babel/runtime": ^7.23.2
-    "@instructure/console": 8.56.2
-    "@instructure/shared-types": 8.56.2
-    "@instructure/ui-utils": 8.56.2
-  checksum: a04d6925cedf4b693d7a688544be260e461c8e64a0de163ac28e7d73be5bd9efdc4e798e08bffbc1fceb35328ecf462e5745e782fde31012aa8338b360b0fce6
+    "@instructure/console": 8.56.3
+    "@instructure/shared-types": 8.56.3
+    "@instructure/ui-utils": 8.56.3
+  checksum: 399ef8f868525136a73573162cfa321b8aa056a15b1c9b17799f191291c0639fc07ba87c874534145dae678f13b24a55e16656bce5291f07c10431274c8e0778
   languageName: node
   linkType: hard
 
-"@instructure/ui-dom-utils@npm:8.56.2":
-  version: 8.56.2
-  resolution: "@instructure/ui-dom-utils@npm:8.56.2"
+"@instructure/ui-dom-utils@npm:8.56.3":
+  version: 8.56.3
+  resolution: "@instructure/ui-dom-utils@npm:8.56.3"
   dependencies:
     "@babel/runtime": ^7.23.2
-    "@instructure/console": 8.56.2
-    "@instructure/shared-types": 8.56.2
+    "@instructure/console": 8.56.3
+    "@instructure/shared-types": 8.56.3
   peerDependencies:
     react: ">=16.8 <=18"
     react-dom: ">=16.8 <=18"
-  checksum: cf6ae931c8481e578205fa18f9b9f75e9e33aa0edf15cc56502c99b638cfce3b3d9e46f98b7cde8d09ca61761ae9adb537775ad7b2f43a6c7ed578b6023fb1c3
+  checksum: 5e668553b6da8c1226421a48501688d56eeeaf20d2d09eca597026a234cffe0b03792ba98e975c2fd74513c31471a8775487228a8d74c0967a09dbe3060855ec
   languageName: node
   linkType: hard
 
-"@instructure/ui-theme-tokens@npm:8.56.2":
-  version: 8.56.2
-  resolution: "@instructure/ui-theme-tokens@npm:8.56.2"
+"@instructure/ui-theme-tokens@npm:8.56.3":
+  version: 8.56.3
+  resolution: "@instructure/ui-theme-tokens@npm:8.56.3"
   dependencies:
     "@babel/runtime": ^7.23.2
-    "@instructure/shared-types": 8.56.2
-  checksum: 10f49d00d8530f6a5236c3744042b5d83e7aa0ad79fe13b2a15d3ae353c2ff7a0dff8550a8ff6e437fce00ff50913c0ee072f405879ad300e69b4bfb7f0e7dad
+    "@instructure/shared-types": 8.56.3
+  checksum: b95ab8ec7dc14abec1a5a4ab4872accaf0fa30d2f0f0deede8d94a00f153b21e26995f3fd8c76dd7817b86230c98b3103412717de4a1516043bdb8009ddfdabe
   languageName: node
   linkType: hard
 
-"@instructure/ui-utils@npm:8.56.2":
-  version: 8.56.2
-  resolution: "@instructure/ui-utils@npm:8.56.2"
+"@instructure/ui-utils@npm:8.56.3":
+  version: 8.56.3
+  resolution: "@instructure/ui-utils@npm:8.56.3"
   dependencies:
     "@babel/runtime": ^7.23.2
-    "@instructure/console": 8.56.2
-    "@instructure/ui-dom-utils": 8.56.2
+    "@instructure/console": 8.56.3
+    "@instructure/ui-dom-utils": 8.56.3
     "@types/ua-parser-js": ^0.7.37
     bowser: ^2.11.0
     fast-deep-equal: ^3.1.3
@@ -1782,7 +1812,7 @@ __metadata:
   peerDependencies:
     react: ">=16.8 <=18"
     react-dom: ">=16.8 <=18"
-  checksum: ef2cc9c3e437f4dfb0966be3092264ae301a4f3f1bbfb87bacd847a16ae434f9084002b92b47de845b25310dff36482d7d8e5c838bae46532ad34f2d4c0c56c5
+  checksum: f5413883bc67fe4c774cad68c1b8cb7e3c1493581ae5d68c9d295287d3414f7992e19258e28f19f95706489925379f80b3aa9f3c960a0b851a62519663efaa66
   languageName: node
   linkType: hard
 
@@ -6781,7 +6811,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -9141,6 +9171,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-dom@npm:^17.0.2":
+  version: 17.0.2
+  resolution: "react-dom@npm:17.0.2"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+    scheduler: ^0.20.2
+  peerDependencies:
+    react: 17.0.2
+  checksum: 1c1eaa3bca7c7228d24b70932e3d7c99e70d1d04e13bb0843bbf321582bc25d7961d6b8a6978a58a598af2af496d1cedcfb1bf65f6b0960a0a8161cb8dab743c
+  languageName: node
+  linkType: hard
+
 "react-i18next@npm:^12.2.0":
   version: 12.3.1
   resolution: "react-i18next@npm:12.3.1"
@@ -9163,6 +9206,16 @@ __metadata:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
+  languageName: node
+  linkType: hard
+
+"react@npm:^17.0.2":
+  version: 17.0.2
+  resolution: "react@npm:17.0.2"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+  checksum: b254cc17ce3011788330f7bbf383ab653c6848902d7936a87b09d835d091e3f295f7e9dd1597c6daac5dc80f90e778c8230218ba8ad599f74adcc11e33b9d61b
   languageName: node
   linkType: hard
 
@@ -9569,6 +9622,16 @@ __metadata:
   version: 1.2.4
   resolution: "sax@npm:1.2.4"
   checksum: d3df7d32b897a2c2f28e941f732c71ba90e27c24f62ee918bd4d9a8cfb3553f2f81e5493c7f0be94a11c1911b643a9108f231dd6f60df3fa9586b5d2e3e9e1fe
+  languageName: node
+  linkType: hard
+
+"scheduler@npm:^0.20.2":
+  version: 0.20.2
+  resolution: "scheduler@npm:0.20.2"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+  checksum: c4b35cf967c8f0d3e65753252d0f260271f81a81e427241295c5a7b783abf4ea9e905f22f815ab66676f5313be0a25f47be582254db8f9241b259213e999b8fc
   languageName: node
   linkType: hard
 
@@ -10678,9 +10741,11 @@ __metadata:
   linkType: hard
 
 "ua-parser-js@npm:^1.0.36":
-  version: 1.0.38
-  resolution: "ua-parser-js@npm:1.0.38"
-  checksum: d0772b22b027338d806ab17d1ac2896ee7485bdf9217c526028159f3cd6bb10272bb18f6196d2f94dde83e3b36dc9d2533daf08a414764f6f4f1844842383838
+  version: 1.0.39
+  resolution: "ua-parser-js@npm:1.0.39"
+  bin:
+    ua-parser-js: script/cli.js
+  checksum: 19455df8c2348ef53f2e150e7406d3a025a619c2fd69722a1e63363d5ba8d91731ef7585f2dce7d8f14c8782734b4d704c05f246dca5f7565b5ae7d318084f2a
   languageName: node
   linkType: hard
 
