@@ -1,7 +1,7 @@
 {
   "name": "@artevelde-uas/canvas-lms-disable-inbox-plugin",
   "version": "0.1.1",
-  "description": "Removes the 'Inbox' funtionality",
+  "description": "Removes the 'Inbox' functionality from Canvas LMS",
   "keywords": [
     "Canvas LMS",
     "inbox"
